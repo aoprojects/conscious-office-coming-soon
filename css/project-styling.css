@@ -1,5 +1,16 @@
 /*insert specific styling for just this project in this file*/
 
+a {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:hover {
+	color: rgba(172,241,166,1.0);
+	font-weight: bold;
+	text-decoration: none;
+}
+
 body {
 	background: #333;
 	color: #eee;
@@ -7,7 +18,7 @@ body {
 
 #logo-area img {
 	width: 90%;
-	max-width: 350px;
+	max-width: 200px;
 }
 
 main .container {
