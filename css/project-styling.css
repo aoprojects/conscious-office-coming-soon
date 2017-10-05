@@ -33,7 +33,7 @@ footer {
 	padding: 50px;
 	color: gray;
 }
-footer a {
+footer a, footer p {
 	color: gray;
 }
 
