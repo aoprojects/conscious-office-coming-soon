@@ -1,5 +1,10 @@
 /*insert specific styling for just this project in this file*/
 
+/*
+Designed by Responsive Redesign
+code@responsiveredesign.io
+*/
+
 a {
 	color: white;
 	font-weight: bold;
@@ -14,6 +19,8 @@ a:hover {
 body {
 	background: #333;
 	color: #eee;
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
 }
 
 @media only screen and (max-width: 991px) {
@@ -82,3 +89,31 @@ main p {
 		font-size: 25px;
 	}	
 }
+
+nav {
+	position: fixed;
+	height: 100px;
+	width: 100%;
+}
+
+nav ul {
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding: 20px;
+	text-decoration: none;
+	list-style: none;
+	color: rgba(172,241,166,1.0);
+	/*todo why is color of text not changing*/
+}
+
+nav ul li {
+	float: left;
+	text-align: center;
+	font-size: 16px;
+	color: rgba(172,241,166,1.0) !important;
+}
+
+
+
+
