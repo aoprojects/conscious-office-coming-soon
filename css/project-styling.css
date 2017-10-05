@@ -16,6 +16,42 @@ body {
 	color: #eee;
 }
 
+@media only screen and (max-width: 991px) {
+	.collab-row-height {
+		padding: 40px;
+	}
+} /*end media query*/
+
+
+@media only screen and (min-width: 992px) {
+	.collab-row-height {
+		height: 300px;
+	}
+} /*end media query*/
+
+footer {
+	padding: 50px;
+	color: gray;
+}
+footer a {
+	color: gray;
+}
+
+.green {
+	color: rgba(172,241,166,1.0);
+}
+
+h1, h2 {
+	color: rgba(172,241,166,1.0);
+	font-weight: 400;
+}
+p, ul {
+	font-weight: 400;
+	font-size: 18px;
+	font-family: 'Avenir Next',sans-serif;
+	color: #iii;
+}
+
 #logo-area img {
 	width: 90%;
 	max-width: 200px;
@@ -23,6 +59,11 @@ body {
 
 main .container {
 	padding-top: 20vh;
+}
+
+main p {
+	font-weight: 400;
+	font-family: Arial;
 }
 
 @media only screen and (max-width: 500px) {
