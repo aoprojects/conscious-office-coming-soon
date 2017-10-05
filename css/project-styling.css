@@ -1,5 +1,6 @@
 /*insert specific styling for just this project in this file*/
 
+
 a {
 	color: white;
 	font-weight: bold;
@@ -39,6 +40,12 @@ footer a, footer p {
 
 .green {
 	color: rgba(172,241,166,1.0);
+}
+.icon img {
+	padding: 10px 20px 20px 20px;
+}
+.orange {
+	color: rgba(255,167,65,1.0);
 }
 
 h1, h2 {
@@ -82,3 +89,12 @@ main p {
 		font-size: 25px;
 	}	
 }
+
+.section-text {
+
+}
+
+
+
+
+
