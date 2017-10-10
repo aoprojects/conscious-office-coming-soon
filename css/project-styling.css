@@ -5,13 +5,22 @@ Designed by Responsive Redesign
 code@responsiveredesign.io
 */
 
+/*
+brand colors:
+green (primary color): rgba(172,241,166,1.0);
+orange (secondary color): browser default orange;
+white for text
+gray for background
+*/
+
 a {
 	color: white;
 	font-weight: bold;
 	text-decoration: none;
 }
 a:hover {
-	color: rgba(172,241,166,1.0);
+	/*color: rgba(172,241,166,1.0);*/  /*green*/
+	color: orange;
 	font-weight: bold;
 	text-decoration: none;
 }
@@ -48,8 +57,12 @@ footer a, footer p {
 	color: rgba(172,241,166,1.0);
 }
 
-h1, h2 {
+h1 {
 	color: rgba(172,241,166,1.0);
+	font-weight: 300;
+}
+h2 {
+	color: orange;
 	font-weight: 300;
 }
 li {
@@ -124,9 +137,23 @@ nav ul li a {
 	font-weight: 100;
 }
 
+.social-icon {
+	color: white;
+	height: 28px;
+}
+#tagline {
+	font-size: 25px;
+	padding: 0px auto 20px auto;
+	margin: 0px auto 20px auto;
+	position: relative;
+	top: -18px;
+}
 .this-page a {
 	/*background-color: #484848;*/
-	color: rgba(172,241,166,1.0) !important;
+	color: rgba(172,241,166,1.0);
+}
+.this-page a:hover {
+	color: orange;
 }
 
 
