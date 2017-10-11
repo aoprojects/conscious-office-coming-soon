@@ -15,6 +15,11 @@
 <meta name="viewport" content="width=device-width, maximum-scale=1">
 
 <title>Conscious Office | Coming Soon</title>
+<!-- for bootstrap cdn for js only -->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<!-- end bootstrap cdn for js only -->
 <link rel="icon" href="favicon.png" type="image/png">
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
@@ -38,16 +43,37 @@ team@virgoventures.org -->
 
 <!-- all .container are inside the anchor elements so they will have container padding, but elements can have background colors of full width -->
 
-
 	<main id="index">
 		<div class="container text-center">
-
 			<nav>
 				<ul>
 					<li class="this-page"><a href="index.html">Home</a></li>
 					<li><a href="opportunities.html">Opportunities</a></li>
 					<br>
-					<li><button class="btn btn-md btn-success">Join Our Growing Email Community</button></li>
+					<li><button type="button" class="btn btn-md btn-success" data-toggle="modal" data-target="#exampleModal">Join Our Growing Email Community</button></li>
+					<!-- Modal begin -->
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalLabel">Join our Email Community</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">   
+				        	<!-- agile crm form code start for joining community email list -->
+							<div id="consciousoffice_5717495361044480" class="agile_crm_form_embed"><span style="display:none">Fill out my <a href="https://consciousoffice.agilecrm.com/forms/5717495361044480">online form</a></span></div>
+							<!-- agile crm form code end for joining community email list -->
+					      </div><!-- end modal body -->
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					        <button type="button" class="btn btn-primary">Save changes</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+					<!-- end modal -->
 				</ul>
 			</nav>
 			<div id="welcome-area" class="row">
