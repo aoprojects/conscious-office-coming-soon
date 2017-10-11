@@ -43,9 +43,11 @@ footer {
 footer a, footer p {
 	color: gray;
 }
-
+.gray {
+	color: gray !important;
+}
 .green {
-	color: rgba(172,241,166,1.0);
+	color: rgba(172,241,166,1.0) !important;
 }
 
 h1, h2 {
@@ -123,12 +125,19 @@ nav ul li {
 nav ul li a {
 	font-weight: 100;
 }
-
+#tagline {
+	position: relative;
+	top: -10px;
+	margin-top: -18px;
+	margin-bottom: 10px;
+}
 .this-page a {
 	/*background-color: #484848;*/
 	color: rgba(172,241,166,1.0) !important;
 }
-
+.white {
+	color: rgba(225,225,225,1.0) !important;
+}
 
 
 
