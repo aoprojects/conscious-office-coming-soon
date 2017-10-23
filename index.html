@@ -47,10 +47,8 @@ team@virgoventures.org -->
 		<div class="container text-center">
 <nav>
 	<div id="nav-brand-area">
-		<%= link_to root_path do %>
-			<%= image_tag('CO-long-logo-v1', alt: "Conscious Office", id: "nav-logo", class: "img-responsive") %>
-			<p id="nav-brand-text" class="hidden">Conscious Office</p>
-		<% end %>
+		<a href="index.html"><img src="images/Co-long-logo-v1.png" alt="Conscious Officce" id="nav-logo" class="img-responsive"></a>
+		<p id="nav-brand-text" class="hidden">Conscious Office</p>
 	</div>
     <div id="navigation-hamburger" class="hidden-md hidden-lg hidden-sm">
       <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">
@@ -59,36 +57,13 @@ team@virgoventures.org -->
       </a>
     </div><!-- end #hamburger -->
 	<ul id="navigation-list">
-		<li><%= link_to "About", root_path %></li>
-		<li><%= link_to "Join", new_customer_path %></li>
-		<li><%= link_to "Opportunities", opportunities_path %></li>
-		<br>
-		<!-- <li><button type="button" class="btn btn-md btn-success" data-toggle="modal" data-target="#exampleModal">Join Our Growing Email Community</button></li> -->
-		<!-- Modal begin -->
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		  <div class="modal-dialog" role="document">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <h5 class="modal-title" id="exampleModalLabel">Join our Email Community</h5>
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-		          <span aria-hidden="true">&times;</span>
-		        </button>
-		      </div>
-		      <div class="modal-body">   
-	        	<!-- agile crm form code start for joining community email list -->
-				<div id="consciousoffice_5717495361044480" class="agile_crm_form_embed"><span style="display:none">Fill out my <a href="https://consciousoffice.agilecrm.com/forms/5717495361044480">online form</a></span></div>
-				<!-- agile crm form code end for joining community email list -->
-		      </div><!-- end modal body -->
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-		        <button type="button" class="btn btn-primary">Save changes</button>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-		<!-- end modal -->
+		<li><a href="index.html">About</a></li>
+		<li><a href="join.html">Join</a></li>
+		<li><a href="opportunities.html">Opportunities</a></li>
 	</ul>
 </nav>
+  	<main>
+  		<div class="container text-center">
 			<div id="welcome-area" class="row">
 				<div class="col-sm-12 col-xs-12 col-md-offset-1 col-md-3 col-lg-offset-1 col-lg-3">
 					<div id="logo-area" class="text-center img-responsive">
@@ -125,7 +100,7 @@ team@virgoventures.org -->
 				<p class="gray">To collaborate, visit our <a href="opportunities.html" class="gray">Opportunities Page</a>.</p></div>
 			</div><!-- action area -->
 			<br><br><br>
-		</div>
+		</div><!-- end .container -->
 	</main>
 <footer>
 	<div class="row">
