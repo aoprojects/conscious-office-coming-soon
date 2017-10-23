@@ -46,37 +46,50 @@ team@virgoventures.org -->
 
 	<main id="opportunities">
 		<div class="container text-center">
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li class="this-page"><a href="opportunities.html">Opportunities</a></li>
-					<br>
-					<li><button type="button" class="btn btn-md btn-success" data-toggle="modal" data-target="#exampleModal">Join Our Growing Email Community</button></li>
-					<!-- Modal begin -->
-					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-					  <div class="modal-dialog" role="document">
-					    <div class="modal-content">
-					      <div class="modal-header">
-					        <h5 class="modal-title" id="exampleModalLabel">Join our Email Community</h5>
-					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					          <span aria-hidden="true">&times;</span>
-					        </button>
-					      </div>
-					      <div class="modal-body">   
-				        	<!-- agile crm form code start for joining community email list -->
-							<div id="consciousoffice_5717495361044480" class="agile_crm_form_embed"><span style="display:none">Fill out my <a href="https://consciousoffice.agilecrm.com/forms/5717495361044480">online form</a></span></div>
-							<!-- agile crm form code end for joining community email list -->
-					      </div><!-- end modal body -->
-					      <div class="modal-footer">
-					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					        <button type="button" class="btn btn-primary">Save changes</button>
-					      </div>
-					    </div>
-					  </div>
-					</div>
-					<!-- end modal -->
-				</ul>
-			</nav>
+<nav>
+	<div id="nav-brand-area">
+		<%= link_to root_path do %>
+			<%= image_tag('CO-long-logo-v1', alt: "Conscious Office", id: "nav-logo", class: "img-responsive") %>
+			<p id="nav-brand-text" class="hidden">Conscious Office</p>
+		<% end %>
+	</div>
+    <div id="navigation-hamburger" class="hidden-md hidden-lg hidden-sm">
+      <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">
+        <div class="hidden">Menu</div>
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </a>
+    </div><!-- end #hamburger -->
+	<ul id="navigation-list">
+		<li><%= link_to "About", root_path %></li>
+		<li><%= link_to "Join", new_customer_path %></li>
+		<li><%= link_to "Opportunities", opportunities_path %></li>
+		<br>
+		<!-- <li><button type="button" class="btn btn-md btn-success" data-toggle="modal" data-target="#exampleModal">Join Our Growing Email Community</button></li> -->
+		<!-- Modal begin -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Join our Email Community</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">   
+	        	<!-- agile crm form code start for joining community email list -->
+				<div id="consciousoffice_5717495361044480" class="agile_crm_form_embed"><span style="display:none">Fill out my <a href="https://consciousoffice.agilecrm.com/forms/5717495361044480">online form</a></span></div>
+				<!-- agile crm form code end for joining community email list -->
+		      </div><!-- end modal body -->
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary">Save changes</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- end modal -->
+	</ul>
+</nav>
 			<h1>Careers&nbsp;and&nbsp;Opportunities with&nbsp;Conscious&nbsp;Office</h1><br>
 			<p>We&nbsp;have&nbsp;just&nbsp;lauched&nbsp;and are&nbsp;looking&nbsp;for&nbsp;a&nbsp;lot&nbsp;of&nbsp;help.</p><br><br>
 			<div class="row">
@@ -117,16 +130,50 @@ team@virgoventures.org -->
 					<p class="text-left">To join that list, email <a href="mailto:sales@consciousoffice.io">sales@consciousoffice.io</a></p>
 				</div><!-- end .col -->
 			</div><!-- end .row -->	
-		</div>
+		</div><!-- end .container -->
 
 	</main>
 
-	<footer class="text-center">
-			<p>For more information, email our founder at <br>
-			<b><a href="mailto:alison@consciousoffice.io">alison@consciousoffice.io</a></b></p>
-			<p><a href="index.html">Back to Home</a></p>
-
-	</footer>
+<footer>
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			<p>
+				<ul>
+					
+					<!-- <li>Conscious Design</li>
+					<li>Conscious Thinking</li>
+					<li>Conscious Community</li> -->
+				</ul>
+			</p>
+		</div><!-- end .col -->
+		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			<p>
+				<ul>
+					<li><%= link_to root_path do %>
+							<%= image_tag('CO-long-logo-v1', alt: "Conscious Office", id: "footer-logo", class: "img-responsive text-center") %>
+						<% end %>
+					</li>
+					<li><%= link_to "About", supplies_path %></li>
+					<li><%= link_to "Join the Community", new_customer_path %></li>
+					<li><%= link_to "Careers & Opportunities", opportunities_path %></li>
+					<li><a href="https://twitter.com/ConsciousOffice" target="none" alt="Twitter">Follow us on Twitter</a></li>
+				</ul>
+			</p>
+		</div><!-- end .col -->
+		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			<p>
+			<ul>
+					
+					<!-- <li>Log in</li>
+					<li>Create an Account</li> -->
+					<!-- todo <li><%= link_to "FAQ", faq_path %></li> -->
+					<!-- <li>Terms and Conditions</li>
+					<li>Privacy Policy</li> -->
+				</ul>
+			</p>
+		</div><!-- end .col -->				
+	</div><!-- end .row -->
+</footer>
 	<!-- todo insert any tracking code client would like. Google analytics, or their CRM, etc. -->
 
 	<!-- for agile crm form tracking and information -->
